@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+server_task2/notes/node_modules
+src/components/Chat/server/node_modules
 
 # testing
 /coverage

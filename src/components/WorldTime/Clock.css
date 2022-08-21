@@ -1,0 +1,82 @@
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.clock-numbers {
+    position: relative;
+    list-style-type: none;
+}
+
+.cn {
+    position: absolute;
+}
+
+.cn-12 {
+    top: -50px;
+    right: -10px;
+}
+
+.cn-3 {
+    top: -15px;
+    right: -45px;
+}
+
+.cn-6 {
+    top: 30px;
+    right: -5px;
+}
+
+.cn-9 {
+    left:-45px;
+    top: -15px;
+}
+
+.clock-hands {
+    position: absolute;
+}
+.ch-hours {
+    background: #000;
+  height: 20px;
+  left: 48.75%;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  width: 3px;
+  transform-origin: 50% 100%;
+  
+}
+
+.ch-minutes {
+    background: #000;
+  height: 35px;
+  position: absolute;
+  top: -35px;
+  transform-origin: 50% 100%;
+  width: 2px;
+  
+}
+
+.ch-seconds {
+    background: #000;
+  height: 40px;
+  left: 1px;
+  position: absolute;
+  top: -33px;
+  transform-origin: 50% 80%;
+  width: 1px;
+  z-index: 8;
+  
+}
+
+@keyframes rotate {
+    100% {
+      transform: rotateZ(360deg);
+    }
+  }
+
