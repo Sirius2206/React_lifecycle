@@ -1,0 +1,32 @@
+.time-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style-type: none;
+}
+
+.time-element {
+    position: relative;
+    margin-right: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+.time-element span {
+    font-weight: bold;
+}
+
+.time-delete {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: -10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}

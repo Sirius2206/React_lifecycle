@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import WorldTime from './components/WorldTime/WorldTime';
 import CRUD from './components/CRUD/CRUD';
 import Chat from './components/Chat/Chat';
+import { nanoid } from 'nanoid';
 
 import './App.css';
 
@@ -35,7 +36,7 @@ function App() {
       <header className="header_main">
         <button className='world-time' onClick={handleClick}>Задание №1(Часы)</button>
         <button className='crud' onClick={handleClick}>Задание №2(CRUD)</button>
-        <button className="chat" onClick={handleClick}>Задание №3()</button>
+        <button className="chat" onClick={handleClick}>Задание №3(Чат)</button>
       </header>
       <div className={"app_" + currentClass}>{app}</div>
     </div>

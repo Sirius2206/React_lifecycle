@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Clock from "./Clock";
 import { nanoid } from "nanoid";
 
-import "./WorldTime.css"
+import "./WorldTime.css";
 
 function WorldTime() {
   const [loc, setLoc] = useState("");
@@ -76,14 +76,20 @@ function WorldTime() {
 
       <ul className="time-list">
         {locsArr.map((item) => (
-            <li className="time-element" key={nanoid()}>
-              {item.loc}: {getTime(item.timezone)}
-              <Clock time={getTime(item.timezone)}/>
-              <button className="time-delete" key={nanoid()} onClick={() => deleteTime(item)}>X</button>
-            </li>
+          <li className="time-element" key={nanoid()}>
+            <span>{item.loc}</span>
+            <Clock time={getTime(item.timezone)} />
+            {getTime(item.timezone)}
+            <button
+              className="time-delete"
+              key={nanoid()}
+              onClick={() => deleteTime(item)}
+            >
+              X
+            </button>
+          </li>
         ))}
       </ul>
-           
     </>
   );
 }
